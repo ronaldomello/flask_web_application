@@ -28,7 +28,7 @@ Novas contas criadas na aplicação terão o nível de usuário 'user' por padr�
 - Usuário comum padrão: login: user, senha: user.
 - Usuário administrador padrão: login: admin, senha: admin.
 
-- [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
+-> [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
 
 ## Demonstração:
 
@@ -114,7 +114,7 @@ https://user-images.githubusercontent.com/109561086/215351526-3c57b5bc-9d2a-4263
 
 https://user-images.githubusercontent.com/109561086/215351541-558e737f-68f0-490d-a7cb-3728417b68d5.mp4
 
-- [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
+-> [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
 
 ## Detalhamento:
 
@@ -196,11 +196,13 @@ Funcionalidade para um usuário admistrador editar as informações de um usuár
 
 Funcionalidade para um usuário admistrador deletar um usuário.
 
+-> [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
+
 ## Instalação:
 
 Para rodar o código em sua máquina será necessário criar uma conta no site [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register), realize a conexão com seu cluster substituindo o código de conexão na linha 9 do arquivo 'mongodb.py' pelo seu.
 
-- [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
+-> [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
 
 ## Arquivos:
 
@@ -215,7 +217,7 @@ dial_web_development_flask:
 - sql_utils.py -> arquivo de utilidade para manipular o banco de dados, contém operações de CRUD.
 - routes.py -> contém todas as rotas da aplicação com suas respectivas regras de negócio.
 
-- [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
+-> [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
 
 ## Tecnologias Utilizadas:
 
@@ -227,4 +229,4 @@ Flask-RESTful | 0.3.9
 pymongo | 4.3.3
 SQLAlchemy | 1.4.42
 
-- [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
+-> [Retornar ao índice](https://github.com/bccalegari/flask_web_application#%C3%ADndice)
