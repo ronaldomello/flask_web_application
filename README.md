@@ -24,16 +24,83 @@ A demonstração geral foi limitada a duas funcionalidades, a visão do controle
 
 Visão geral usuário comum:
 
+https://user-images.githubusercontent.com/109561086/215350987-25c0f9e0-fd13-4074-8819-66229edd47c2.mp4
 
 Visão geral administrador:
 
+https://user-images.githubusercontent.com/109561086/215351004-c28d4bc0-3594-4b85-bd0f-affe7dfdb742.mp4
 
-### Demonstrações detalhadas:
+### Demonstrações Detalhadas:
 
-#### Sign Up:
+#### Sign Up - Erros:
 
+https://user-images.githubusercontent.com/109561086/215351053-3f1333fb-cd02-43b9-9e0f-ad2d320ea521.mp4
 
+#### Log In - Erros:
 
+https://user-images.githubusercontent.com/109561086/215351063-d7a48f11-22a4-412e-b471-86d370ce9eec.mp4
+
+#### Sign Up e Log In - Sucesso:
+
+https://user-images.githubusercontent.com/109561086/215351097-4c7f97dc-61b6-4509-8a29-3359e788902f.mp4
+
+#### Update Account - Erros:
+
+https://user-images.githubusercontent.com/109561086/215351205-b71faafe-ecdb-4b6e-b7a3-8eb06fcb88d7.mp4
+
+#### Update Account - Sucesso:
+
+https://user-images.githubusercontent.com/109561086/215351229-65aeac6b-a05a-410b-90f9-08bc788c6ee4.mp4
+
+#### Inventory Management:
+
+- User:
+
+https://user-images.githubusercontent.com/109561086/215351285-1cf04c85-445d-421d-a6f8-f41df053248d.mp4
+
+- Admin:
+
+  - Add - Erros:
+  
+  https://user-images.githubusercontent.com/109561086/215351362-d8c28a99-3140-4437-86c2-60b6225b8da4.mp4
+
+  - Add - Sucesso:
+
+  https://user-images.githubusercontent.com/109561086/215351584-a87b7136-c619-4b0c-8394-49bf12aee56e.mp4
+
+  - Edit - Erros:
+
+  https://user-images.githubusercontent.com/109561086/215351421-cfe3cc7b-69cb-44ba-8d03-c5ed8ce271e9.mp4
+
+  - Edit - Sucesso:
+
+  https://user-images.githubusercontent.com/109561086/215351431-51c09b8e-d1ed-4645-957d-c95d1692a0b4.mp4
+
+  - Delete:
+
+  https://user-images.githubusercontent.com/109561086/215351438-5f3d3b7c-b415-4377-aa8c-d6df02a5f295.mp4
+
+#### User Management:
+
+- Add - Erros:
+
+https://user-images.githubusercontent.com/109561086/215351500-3be9167f-763f-41a5-84b6-b50f41a9244b.mp4
+
+- Add - Sucesso:
+
+https://user-images.githubusercontent.com/109561086/215351511-1d00b0df-ba73-4f0c-a8c4-3123dfa393d1.mp4
+
+- Edit - Erros:
+
+https://user-images.githubusercontent.com/109561086/215351516-f49267b3-2a41-4a27-9e20-44f92521d3db.mp4
+
+- Edit - Sucesso:
+
+https://user-images.githubusercontent.com/109561086/215351526-3c57b5bc-9d2a-4263-bee0-15abdb4d167a.mp4
+
+- Delete:
+
+https://user-images.githubusercontent.com/109561086/215351541-558e737f-68f0-490d-a7cb-3728417b68d5.mp4
 
 ## Detalhamento:
 
