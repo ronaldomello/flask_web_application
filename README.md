@@ -1,7 +1,7 @@
 # Aplicação Web: Sistema de Controle de Estoque - diAL
 
 Aplicação web com CRUD desenvolvida com python, flask, sqlite e mongodb: 
-  - Sistema de controle de estoque com controle de acesso e funcionalidades diferentes dependendo do nível do usuário.
+  - Sistema de controle de estoque e gerenciamento de usuários da aplicação com controle de acesso e funcionalidades diferentes dependendo do nível do usuário.
 
 O controle de acesso é verificado em toda chamada GET ou POST nas rotas para verificar se o usuário tem o nível preciso para realizar a operação, se o usuário está logado em uma sessão e se o usuário está tentando acessar a sessão de outra pessoa.
 
