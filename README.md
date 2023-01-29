@@ -1,11 +1,11 @@
 # Aplicação Web: Sistema de Controle de Estoque - diAL
 
-Aplicação web com CRUD desenvolvida com python, flask, sqlite e mongodb: 
+Aplicação web com CRUD desenvolvida com python, flask, sqlalchemy e mongodb: 
   - Sistema de controle de estoque e gerenciamento de usuários da aplicação com controle de acesso e funcionalidades diferentes dependendo do nível do usuário.
 
 O controle de acesso é verificado em toda chamada GET ou POST nas rotas para verificar se o usuário tem o nível preciso para realizar a operação, se o usuário está logado em uma sessão e se o usuário está tentando acessar a sessão de outra pessoa.
 
-Todo o código está extensamente comentado, o app, routes, config, models, sql_utils e mongodb. Possui templates html com estilizações em css. Os comentários do cógio foram feitos em inglês por preferência.
+Todo o código está extensamente comentado, possui templates html com estilizações em css. Os comentários do cógio foram feitos em inglês por preferência.
 
 ## Índice
 
@@ -210,3 +210,11 @@ dial_web_development_flask:
 - routes.py -> contém todas as rotas da aplicação com suas respectivas regras de negócio.
 
 ## Tecnologias Utilizadas:
+
+Tecnologia | Versão
+--- | ---
+Python | 3.10.4
+Flask | 2.2.2
+Flask-RESTful | 0.3.9
+pymongo | 4.3.3
+SQLAlchemy | 1.4.42
