@@ -5,7 +5,7 @@ Aplicação web com CRUD desenvolvida com python, flask, sqlite e mongodb:
 
 O controle de acesso é verificado em toda chamada GET ou POST nas rotas para verificar se o usuário tem o nível preciso para realizar a operação, se o usuário está logado em uma sessão e se o usuário está tentando acessar a sessão de outra pessoa.
 
-Todo o código está extensamente comentado, o app, routes, config, models, sql_utils e mongodb. Possui templates html com estilizações em css. Os comentários estão em inglês por preferência. (Como estou buscando me aperfeiçoar em inglês, busco fazer os comentários em inglês em meus códigos)
+Todo o código está extensamente comentado, o app, routes, config, models, sql_utils e mongodb. Possui templates html com estilizações em css. Os comentários foram feitos em inglês por preferência.
 
 ## Features
 
@@ -20,7 +20,7 @@ Novas contas criadas na aplicação terão o nível de usuário 'user' por padr�
 
 ## Demonstração:
 
-Limitei a demonstração geral a duas funcionalidades, a visão do controle de inventário por um usuário comum, e a visão do administrador, incluindo o controle dos usuários da aplicação, deixarei uma visualização mais detalhada de cada funcionalidade abaixo com gifs e prints.
+A demonstração geral foi limitada a duas funcionalidades, a visão do controle de inventário por um usuário comum, e a visão do administrador, incluindo o controle dos usuários da aplicação.
 
 Visão geral usuário comum:
 
