@@ -5,7 +5,7 @@ Aplicação web com CRUD desenvolvida com python, flask, sqlite e mongodb:
 
 O controle de acesso é verificado em toda chamada GET ou POST nas rotas para verificar se o usuário tem o nível preciso para realizar a operação, se o usuário está logado em uma sessão e se o usuário está tentando acessar a sessão de outra pessoa.
 
-Todo o código está extensamente comentado, o app, routes, config, models, sql_utils e mongodb. Possui templates html com estilizações em css. Os comentários foram feitos em inglês por preferência.
+Todo o código está extensamente comentado, o app, routes, config, models, sql_utils e mongodb. Possui templates html com estilizações em css. Os comentários do cógio foram feitos em inglês por preferência.
 
 ## Índice
 
