@@ -27,9 +27,12 @@ Visão geral usuário comum:
 
 Visão geral administrador:
 
-- Controle de Inventário:
 
-- Controle de Usuários:
+### Demonstrações detalhadas:
+
+#### Sign Up:
+
+
 
 
 ## Detalhamento:
