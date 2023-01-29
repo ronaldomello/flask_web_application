@@ -36,7 +36,7 @@ Visão geral administrador:
 
 ### Bancos de Dados:
 
-Existem dois bancos de dados na aplicação, o primeiro é o SQLite que comporta os usuários da aplicação e o segundo o MongoDB que comporta os produtos da aplicação. Cada banco possui sua classe de utilidades, referentes a select, insert, update e delete, sendo o SqlUtils referente ao SQLite e o MongoUtils referente ao MongoDB, para um detalhamento maior de suas funcionalidades, verificar os comentários no código.
+Existem dois bancos de dados na aplicação, o primeiro é o SQLite que comporta os usuários (todas as senhas são submetidas a uma criptografia md5 para serem armazenadas no banco) da aplicação e o segundo o MongoDB que comporta os produtos da aplicação. Cada banco possui sua classe de utilidades, referentes a select, insert, update e delete, sendo o SqlUtils referente ao SQLite e o MongoUtils referente ao MongoDB, para um detalhamento maior de suas funcionalidades, verificar os comentários no código.
 
 ### Sign Up:
 
