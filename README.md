@@ -12,6 +12,9 @@ Todo o código está extensamente comentado, o app, routes, config, models, sql_
 - 1. [Features](https://github.com/bccalegari/flask_web_application#features)
 - 2. [Demonstração](https://github.com/bccalegari/flask_web_application#demonstra%C3%A7%C3%A3o)
 - 3. [Detalhamento](https://github.com/bccalegari/flask_web_application#detalhamento)
+- 4. [Instalação](https://github.com/bccalegari/flask_web_application#detalhamento)
+- 5. [Arquivos](https://github.com/bccalegari/flask_web_application#detalhamento)
+- 6. [Tecnologias Utilizadas](https://github.com/bccalegari/flask_web_application#detalhamento)
 
 ## Features
 
@@ -187,3 +190,19 @@ Funcionalidade para um usuário admistrador editar as informações de um usuár
 ##### User Delete:
 
 Funcionalidade para um usuário admistrador deletar um usuário.
+
+## Instalação:
+
+
+## Arquivos:
+
+dial_web_development_flask:
+- static -> arquivos css referentes aos templates html.
+- templates -> templates html.
+- app.py -> arquivo principal, adiciona todas as rotas ao app, executar para ligar o app.
+- config.py -> arquivo de configurações do servidor.
+- diAL_users.db -> banco de dados gerado pelo arquivo 'models.py', contém os usuários da aplicação.
+- models.py -> arquivo de criação do banco de dados, contém o modelo da tabela de usuários.
+- mongodb.py -> arquivo de instanciação e conexão com o MongoDBAtlas, também contém operações de utilidade (CRUD).
+- sql_utils.py -> arquivo de utilidade para manipular o banco de dados, contém operações de CRUD.
+- routes.py -> contém todas as rotas da aplicação com suas respectivas regras de negócio.
