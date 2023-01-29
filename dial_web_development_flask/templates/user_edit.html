@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/user_edit_style.css">
+    <title>Account Edit</title>
+</head>
+<body>
+    <section class="area-edit">
+        <div class="edit">
+            <h2>{{to_edit_user.login}} Account</h2>
+            <span>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            </span>
+
+            <form method="POST" id="user">
+                <input type="text" name="new_login"
+                       placeholder=Current&nbsp;login:&nbsp;{{to_edit_user.login}} autofocus>
+                <input type="text" name="new_name"
+                       placeholder=Current&nbsp;name:&nbsp;{{to_edit_user.name}}>
+                <input type="text" name="new_email"
+                       placeholder=Current&nbsp;e-mail:&nbsp;{{to_edit_user.name}}>
+                <label for="user_type">Current user type: {{to_edit_user.user_type}}</label>
+                <select name="user_type" id="user_type" form="user">
+                    <option value="">-- Change the user type --</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <input type="password" name="new_password" placeholder="Change password">
+                <input type="password" name="new_password_confirm" placeholder="Confirm your new password">
+                <input type="submit" value="Confirm">
+                <p>Don't want to change anything? <a href={{users_management}}>Return to the dashboard</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

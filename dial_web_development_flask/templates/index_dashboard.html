@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/index_dashboard_style.css">
+    <title>diAL</title>
+</head>
+<body>
+    <section class="area-user">
+        <div class="options">
+            <div>
+                <img id ="logo" src="{{ url_for('static', filename='images/logo.png')}}">
+            </div>
+                <h2>Hello, {{login}}!</h2>
+            <div class="options-area">
+                 <div class="options_text">
+                     <a class="btn" href="{{inventory_management}}">Inventory Management</a>
+                     {% if user_admin == True %}
+                        <a class="btn" href="{{users_management}}">Users Management</a>
+                     {% endif %}
+                     <a class="btn" href={{my_account}}>My Account</a>
+                     <a class="btn" href={{update_my_account}}>Update Account</a>
+                     <a class="btn" href="/logout">Log out</a>
+                 </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

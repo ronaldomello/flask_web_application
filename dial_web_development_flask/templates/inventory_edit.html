@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/inventory_edit_style.css">
+    <title>Inventory Edit</title>
+</head>
+<body>
+    <section class="area-edit">
+        <div class="edit">
+            <h2>{{to_edit_product['product_name']}}</h2>
+            <span>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            </span>
+
+            <form method="POST" id="product">
+                <input type="text" name="product_name"
+                       placeholder=Current&nbsp;product&nbsp;name:&nbsp;{{to_edit_product['product_name']}}
+                       autofocus>
+                <input type="text" name="product_code"
+                       placeholder=Current&nbsp;product&nbsp;code:&nbsp;{{to_edit_product['product_code']}}>
+                <input type="number" min="0" max="5000" name="product_quantity"
+                       placeholder=Current&nbsp;product&nbsp;quantity:&nbsp;{{to_edit_product['quantity']}}&nbsp;units>
+                <input type="number" min="0" max="100000" step=".01" name="product_price"
+                       placeholder=Current&nbsp;product&nbsp;price:&nbsp;${{to_edit_product['price']}}>
+                <label for="product_category">Current Product Category: {{to_edit_product['category']}}</label>
+                <select name="product_category" id="product_category" form="product">
+                    <option value={{to_edit_product['category']}}>-- Change product category --</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Books">Books</option>
+                    <option value="Tools">Tools</option>
+                </select>
+                <label for="inventory_location">Current Inventory Location: {{to_edit_product['inventory_location']}}</label>
+                <select name="inventory_location" id="inventory_location" form="product">
+                    <option value={{to_edit_product['inventory_location']}}>-- Change inventory location --</option>
+                    <option value="Boston">Boston</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Portland">Portland</option>
+                </select>
+                <input type="submit" value="Confirm">
+                <p>Don't want to change anything? <a href={{inventory_management}}>Return to the dashboard</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/user_add_style.css">
+    <title>Account Edit</title>
+</head>
+<body>
+    <section class="area-add">
+        <div class="add">
+            <h2>Add New User</h2>
+            <span>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            </span>
+
+            <form method="POST" id="user">
+                <input type="text" name="new_login" placeholder="Username" autofocus required>
+                <input type="text" name="new_name" placeholder="Name" required>
+                <input type="text" name="new_email" placeholder="E-mail" required>
+                <label for="user_type">User Type:</label>
+                <select name="user_type" id="user_type" form="user" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <input type="password" name="new_password" placeholder="Password" required>
+                <input type="password" name="new_password_confirm" placeholder="Confirm your password" required>
+                <input type="submit" value="Confirm">
+                <p>Don't want to change anything? <a href={{users_management}}>Return to the dashboard</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

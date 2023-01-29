@@ -1,0 +1,125 @@
+body{
+    background-color:  #040a0e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.area-edit{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:  #07090b;
+    width: 800px;
+    height: 550px;
+    padding: 30px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #1f2123;
+    border-width: 1px;
+}
+
+.edit h2{
+    color: #d0b7e4;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.edit span{
+    color: #ff0000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.edit form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.edit input {
+    margin-top: 8px;
+    background-color: #252A40;
+    color: #CBD0F7;
+    padding-left: 10px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.edit input:hover{
+    background-color: #01042f;
+}
+
+.edit label {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 8px;
+    background-color: #252A40;
+    color: #CBD0F7;
+    padding-left: 10px;
+    width: 45%;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.edit select {
+    font-size: 12px;
+    margin-top: 8px;
+    background-color: #252A40;
+    color: #CBD0F7;
+    padding-left: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.edit select:hover{
+    background-color: #01042f;
+}
+
+input::placeholder{
+    color: #CBD0F7;
+    font-size: 12px;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #5568FE;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover{
+    background-color: #01042f;
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+    color: #CBD0F7;
+}
+
+a{
+    color: #5568FE;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover{
+    color: #800080;
+}

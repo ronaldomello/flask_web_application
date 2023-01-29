@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/my_account_style.css">
+    <title>My Account</title>
+</head>
+<body>
+    <section class="area-user">
+        <div class="options">
+            <div>
+                <img id ="logo" src="{{ url_for('static', filename='images/logo.png')}}">
+            </div>
+                <h2>My Account</h2>
+            <div class="options-area">
+                 <div class="options_text">
+                    <a class="option">Login: {{login}}</a>
+                     <a class="option">Name: {{user_name}}</a>
+                    <a class="option">E-mail: {{user_email}}</a>
+                 </div>
+            </div>
+            <div class="dash_update">
+                <a class="dash" href="/">Dashboard</a>
+                <a class="update" href={{update_my_account}}>Update Account</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

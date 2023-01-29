@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/users_management_style.css">
+    <title>Users</title>
+</head>
+<body>
+    <section class="product-area">
+        <div class="row">
+            <div class="product_title">
+                <h1>Users Management</h1>
+            </div>
+            <div class="table-responsive">
+                <div class="table-options">
+                    {% if user_admin == True %}
+                        <a href="user/add" class="option">Add New User</a>
+                    {% endif %}
+                    <a href="{{dashboard}}" class="option">Back to the Dashboard</a>
+                    <div class="flash_message" align="right">
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages %}
+                                    {{ message }}
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    <div class="search-return" align="center">
+                        {% if search == True %}
+                            <a href="{{search_return}}">
+                                <button type="button" class="btn-search-return">Return</button>
+                            </a>
+                        {% endif %}
+                    </div>
+                    <div class="search-bar" align="right">
+                        <form class="search-form" method="POST">
+                            <input class="search-input" type="text" placeholder="User name" name="search">
+                            <button class="btn-search" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>User_ID</th>
+                            <th>Login</th>
+                            <th>Name</th>
+                            <th>E-mail</th>
+                            <th>Password</th>
+                            <th>User_Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                            <tr>
+                                <td> {{ user['id'] }} </td>
+                                <td> {{ user['login'] }} </td>
+                                <td> {{ user['name'] }} </td>
+                                <td> {{ user['email'] }} </td>
+                                <td> {{ user['password'] }} </td>
+                                <td> {{ user['user_type'] }} </td>
+                                {% if user_admin == True %}
+                                    <td><a href={{user_link}}{{user['id']}}/edit>Edit</a></td>
+                                    <td><a href={{user_link}}{{user['id']}}/delete>Delete</a></td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

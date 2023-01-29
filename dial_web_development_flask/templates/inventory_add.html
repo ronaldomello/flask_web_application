@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/inventory_add_style.css">
+    <title>Account Edit</title>
+</head>
+<body>
+    <section class="area-add">
+        <div class="add">
+            <h2>Add New Product</h2>
+            <span>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            </span>
+
+            <form method="POST" id="product">
+                <input type="text" name="product_name" placeholder="Product Name" autofocus required>
+                <input type="text" name="product_code" placeholder="Product Code" required>
+                <input type="number" min="0" max="5000" name="product_quantity" placeholder="Product Quantity" required>
+                <input type="number" min="0" max="100000" step=".01" name="product_price" placeholder="Product Price" required>
+                <label for="product_category">Product Category:</label>
+                <select name="product_category" id="product_category" form="product" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Books">Books</option>
+                    <option value="Tools">Tools</option>
+                </select>
+                <label for="inventory_location">Inventory Location:</label>
+                <select name="inventory_location" id="inventory_location" form="product" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="Boston">Boston</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Portland">Portland</option>
+                </select>
+                <input type="submit" value="Confirm">
+                <p>Don't want to change anything? <a href={{inventory_management}}>Return to the dashboard</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

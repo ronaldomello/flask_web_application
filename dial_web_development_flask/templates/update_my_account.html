@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/update_my_account_style.css">
+    <title>Account Update</title>
+</head>
+<body>
+    <section class="area-update">
+        <div class="update">
+            <h2>Update your Account</h2>
+            <span>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            {{ message }}
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </span>
+
+            <form method="POST">
+                <input type="text" name="new_login" placeholder="Change username" autofocus>
+                <input type="text" name="new_name" placeholder="Change name">
+                <input type="text" name="new_email" placeholder="Change e-mail">
+                <input type="password" name="current_password" placeholder="Current password" required>
+                <input type="password" name="new_password" placeholder="Change password">
+                <input type="password" name="new_password_confirm" placeholder="Confirm your new password">
+                <input type="submit" value="Confirm">
+                <p>Don't want to change anything? <a href="/">Return to the dashboard</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/inventory_management_style.css">
+    <title>Inventory</title>
+</head>
+<body>
+    <section class="product-area">
+        <div class="row">
+            <div class="product_title">
+                <h1>Inventory Management</h1>
+            </div>
+            <div class="table-responsive">
+                <div class="table-options">
+                    {% if user_admin == True %}
+                        <a href="inventory/add" class="option">Add New Product</a>
+                    {% endif %}
+                    <a href="{{dashboard}}" class="option">Back to the Dashboard</a>
+                    <div class="flash_message" align="right">
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                {% for message in messages %}
+                                    {{ message }}
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    <div class="search-return" align="center">
+                        {% if search == True %}
+                            <a href="{{search_return}}">
+                                <button type="button" class="btn-search-return">Return</button>
+                            </a>
+                        {% endif %}
+                    </div>
+                    <div class="search-bar" align="right">
+                        <form class="search-form" method="POST">
+                            <input class="search-input" type="text" placeholder="Product name" name="search">
+                            <button class="btn-search" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>User_ID</th>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Category</th>
+                            <th>Inventory Location</th>
+                            <th>Total Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
+                            <tr>
+                                <td> {{ product['user_id'] }} </td>
+                                <td> {{ product['product_name'] }} </td>
+                                <td> {{ product['product_code'] }} </td>
+                                <td> {{ product['price'] }} </td>
+                                <td> {{ product['quantity'] }} </td>
+                                <td> {{ product['category'] }} </td>
+                                <td> {{ product['inventory_location'] }} </td>
+                                <td> {{ product['total_value'] }} </td>
+                                {% if user_admin == True %}
+                                    <td><a href="/{{user_login}}/inventory/{{product['_id']}}/edit">Edit</a></td>
+                                    <td><a href="/{{user_login}}/inventory/{{product['_id']}}/delete">Delete</a></td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

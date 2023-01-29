@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/user_delete_style.css">
+    <title>My Account</title>
+</head>
+<body>
+    <section class="area">
+        <div class="options">
+            <h2>{{to_edit_user_login}} Account</h2>
+            <h3>Are you sure you want to remove this account?</h3>
+            <div class="dash_update">
+                <a class="dash" href={{users_management}}>Cancel</a>
+                <form method="POST">
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

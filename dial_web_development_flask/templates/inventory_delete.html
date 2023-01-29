@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/inventory_delete_style.css">
+    <title>Inventory Delete</title>
+</head>
+<body>
+    <section class="area">
+        <div class="options">
+            <h2>Product: {{to_delete_product['product_name']}}</h2>
+            <h4>Code: {{to_delete_product['product_code']}}</h4>
+            <h4>Inventory Location: {{to_delete_product['inventory_location']}}</h4>
+            <h3>Are you sure you want to remove this product?</h3>
+            <div class="dash_update">
+                <a class="dash" href={{inventory_management}}>Cancel</a>
+                <form method="POST">
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
