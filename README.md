@@ -25,6 +25,7 @@ Admin | <p align="center"> &#9745; </p> | <p align="center"> &#9745; </p> | <p a
 
 Novas contas criadas na aplicação terão o nível de usuário 'user' por padrão, a única maneira de elevar o nível para 'admin' é editando a conta do usuário pelo gerenciamento de usuários, funcionalidade que só é disponibilizada para usuários administradores.
 
+- Usuário comum padrão: login: user, senha: user.
 - Usuário administrador padrão: login: admin, senha: admin.
 
 ## Demonstração:
