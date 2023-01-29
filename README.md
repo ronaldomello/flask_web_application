@@ -12,9 +12,9 @@ Todo o código está extensamente comentado, o app, routes, config, models, sql_
 - 1. [Features](https://github.com/bccalegari/flask_web_application#features)
 - 2. [Demonstração](https://github.com/bccalegari/flask_web_application#demonstra%C3%A7%C3%A3o)
 - 3. [Detalhamento](https://github.com/bccalegari/flask_web_application#detalhamento)
-- 4. [Instalação](https://github.com/bccalegari/flask_web_application#detalhamento)
-- 5. [Arquivos](https://github.com/bccalegari/flask_web_application#detalhamento)
-- 6. [Tecnologias Utilizadas](https://github.com/bccalegari/flask_web_application#detalhamento)
+- 4. [Instalação](https://github.com/bccalegari/flask_web_application#instalação)
+- 5. [Arquivos](https://github.com/bccalegari/flask_web_application#arquivos)
+- 6. [Tecnologias Utilizadas](https://github.com/bccalegari/flask_web_application#tecnologias-utilizadas)
 
 ## Features
 
