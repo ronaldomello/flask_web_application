@@ -7,6 +7,12 @@ O controle de acesso é verificado em toda chamada GET ou POST nas rotas para ve
 
 Todo o código está extensamente comentado, o app, routes, config, models, sql_utils e mongodb. Possui templates html com estilizações em css. Os comentários foram feitos em inglês por preferência.
 
+## Índice
+
+- 1. [Features](https://github.com/bccalegari/flask_web_application#features)
+- 2. [Demonstração](https://github.com/bccalegari/flask_web_application#demonstra%C3%A7%C3%A3o)
+- 3. [Detalhamento](https://github.com/bccalegari/flask_web_application#detalhamento)
+
 ## Features
 
 Nível do Usuário | Atualizar sua Própria Conta | Visualizar os Produtos | Adicionar um Produto | Editar um Produto | Deletar um Produto | Visualizar os Usuários | Adicionar um Usuário | Editar um Usuário | Deletar um Usuário
