@@ -193,6 +193,7 @@ Funcionalidade para um usuário admistrador deletar um usuário.
 
 ## Instalação:
 
+Para rodar o código em sua máquina será necessário criar uma conta no site [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register), realize a conexão com seu cluster substituindo o código de conexão na linha 9 do arquivo 'mongodb.py' pelo seu.
 
 ## Arquivos:
 
@@ -203,6 +204,8 @@ dial_web_development_flask:
 - config.py -> arquivo de configurações do servidor.
 - diAL_users.db -> banco de dados gerado pelo arquivo 'models.py', contém os usuários da aplicação.
 - models.py -> arquivo de criação do banco de dados, contém o modelo da tabela de usuários.
-- mongodb.py -> arquivo de instanciação e conexão com o MongoDBAtlas, também contém operações de utilidade (CRUD).
+- mongodb.py -> arquivo de instanciação e conexão com o MongoDB Atlas, também contém operações de utilidade (CRUD).
 - sql_utils.py -> arquivo de utilidade para manipular o banco de dados, contém operações de CRUD.
 - routes.py -> contém todas as rotas da aplicação com suas respectivas regras de negócio.
+
+## Tecnologias Utilizadas:
