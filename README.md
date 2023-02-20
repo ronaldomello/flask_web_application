@@ -7,7 +7,7 @@ O controle de acesso é verificado em toda chamada GET ou POST nas rotas para ve
 
 Todo o código está extensamente comentado, possui templates html com estilizações em css. Por preferência, os comentários do código foram feitos em inglês.
 
-## Índice
+## Índice 
 
 - 1. [Features](https://github.com/bccalegari/flask_web_application#features)
 - 2. [Demonstração](https://github.com/bccalegari/flask_web_application#demonstra%C3%A7%C3%A3o)
